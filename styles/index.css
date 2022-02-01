@@ -1,0 +1,64 @@
+@import url(./normalize.css);
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+	--grey: #4B5D68;
+	--dark-blue: #212353;
+  --purple: #9C69E2;
+	--pink: #F063B8;
+	--light-green: #68C9BA;
+}
+
+.header {
+	display: flex;
+	padding: 62px 240px 0;
+	background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+}
+
+.header__logo {
+	text-decoration: none;
+	margin-right: 120px;
+}
+
+.header__logo-img {
+	width: 49px;
+	height: 35px;
+}
+
+.header__menu {
+	display: flex;
+	align-items: center;
+}
+
+.header__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.header__item {
+	margin-right: 40px;
+}
+
+.header__item:last-of-type {
+	margin-right: 0;
+}
+
+.header__link {
+	text-decoration: none;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	line-height: 25.6px;
+	color: var(--grey);
+	font-weight: 500;
+}
+
+.header__link_active {
+	font-weight: 700;
+	color: var(--dark-blue);
+}
