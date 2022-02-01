@@ -1,0 +1,54 @@
+.banner {
+	padding: 0 112px 0 240px;
+	margin-bottom: 100px;
+}
+
+.content {
+	min-height: 550px;
+	background-image: url(/images/svg/banner.svg);
+	background-repeat: no-repeat;
+	background-size: 885px 468px;
+	background-position: bottom right;
+}
+
+.banner__title {
+	margin: 0;
+	margin-bottom: 50px;
+	max-width: 645px;
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 80px;
+	line-height: 88px;
+	color: var(--dark-blue);
+}
+
+.banner__desc {
+	margin: 0;
+	margin-bottom: 50px;
+	max-width: 380px;
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28.8px;
+	color: var(--grey);
+}
+
+.banner__button {
+	border: none;
+	width: 170px;
+	height: 60px;
+	background-color: var(--purple);
+	border-radius: 50px;
+}
+
+.banner__button-text {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	color: var(--white);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28.8px;
+}

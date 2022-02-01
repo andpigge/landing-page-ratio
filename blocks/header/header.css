@@ -2,6 +2,7 @@
 	display: flex;
 	padding: 62px 240px 0;
 	background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+	margin-bottom: 142px;
 }
 
 .header__logo {
