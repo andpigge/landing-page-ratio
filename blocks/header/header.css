@@ -50,3 +50,14 @@
 	font-weight: 700;
 	color: var(--dark-blue);
 }
+
+@media (max-width: 728px) {
+	.header {
+		justify-content: space-between;
+		padding: 40px 24px 0;
+	}
+
+	.header__list {
+		display: block;
+	}
+}
