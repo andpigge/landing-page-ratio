@@ -1,9 +1,20 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts.css);
 @import url(./vendor/palette.css);
+@import url(./vendor/breakpoints.css);
 
 @import url(./blocks/page/page.css);
 @import url(./blocks/main/main.css);
 @import url(./blocks/header/header.css);
 @import url(./blocks/banner/banner.css);
 @import url(./blocks/info/info.css);
+
+body {
+	font-size: calc(100vw / 1600 * 16);
+}
+
+@media (max-width: 728px) {
+	body {
+		font-size: calc(100vw / 728 * 16);
+	}
+}

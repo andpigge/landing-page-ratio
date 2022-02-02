@@ -3,3 +3,7 @@
 .main__center {
 	margin: 0 auto;
 }
+
+.main__left-center {
+	margin-left: auto;
+}
