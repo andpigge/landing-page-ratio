@@ -1,7 +1,6 @@
-@import url(./vendor/normalize.css);
-@import url(./vendor/fonts.css);
-@import url(./vendor/palette.css);
-@import url(./vendor/breakpoints.css);
+@import url(./styles/normalize.css);
+@import url(./styles/fonts.css);
+@import url(./styles/palette.css);
 
 @import url(./blocks/page/page.css);
 @import url(./blocks/main/main.css);
