@@ -28,6 +28,8 @@
 	font-size: 18px;
 	line-height: 160%;
 	color: var(--grey);
+	position: relative;
+  z-index: 1;
 }
 
 .banner__button {
@@ -60,7 +62,7 @@
 	background-position: bottom right;
 }
 
-@media (max-width: 728px) {
+@media (max-width: 800px) {
 	.banner {
 		padding: 0 24px 0;
 		min-height: initial;
@@ -69,6 +71,7 @@
 	.banner__title {
 		font-size: 40px;
 		margin-bottom: 20px;
+		max-width: 480px;
 	}
 
 	.banner__desc {
@@ -76,6 +79,16 @@
 	}
 
 	.banner__bg {
+		bottom: -118px;
+	}
+}
+
+@media (max-width: 540px) {
+	.banner__bg {
 		display: none;
+	}
+
+	.banner {
+		margin-bottom: 140px;
 	}
 }

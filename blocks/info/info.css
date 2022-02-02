@@ -16,7 +16,7 @@
 	height: auto;
 }
 
-.container-text {}
+.info__container-text {}
 
 .info__title {
 	width: 100%;
@@ -24,9 +24,9 @@
 	margin-bottom: 40px;
 	font-family: 'Ubuntu', sans-serif;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 40px;
-	line-height: 52px;
+	line-height: 130%;
 	color: var(--dark-blue);
 }
 
@@ -37,5 +37,31 @@
 	font-style: normal;
 	font-weight: 500;
 	font-size: 18px;
-	line-height: 28.8px;
+	line-height: 160%;
+}
+
+@media (max-width: 728px) {
+	.info {
+		display: grid;
+		border-radius: 0;
+		padding: 32px 32px 32px 0;
+		justify-items: center;
+		grid-template-columns: 1fr;
+	}
+
+	.info__container-text {
+		margin-left: 24px;
+	}
+
+	.info__image {
+		max-width: 469px;
+	}
+
+	.info__title {
+		font-size: 30px;
+	}
+
+	.info__desc {
+		font-size: 14px;
+	}
 }
