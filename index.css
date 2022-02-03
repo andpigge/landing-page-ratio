@@ -9,6 +9,7 @@
 @import url(./blocks/info/info.css);
 @import url(./blocks/features/features.css);
 @import url(./blocks/card/card.css);
+@import url(./blocks/footer/footer.css);
 
 body {
 	font-size: calc(100vw / 1600 * 16);
