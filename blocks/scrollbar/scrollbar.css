@@ -1,0 +1,102 @@
+.scrollbar {
+	max-width: 1118px;
+	padding: 110px 0 60px 92px;
+	margin-bottom: 150px;
+	background-color: var(--purple);
+	border-radius: 50px;
+	box-sizing: border-box;
+}
+
+.scrollbar__margin-button {
+	margin-bottom: 60px;
+}
+
+.scrollbar__title {
+	margin: 0;
+	margin-bottom: 88px;
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 130%;
+	color: var(--white);
+}
+
+.scrollbar__wrapper {
+	display: grid;
+	/* grid-template-columns: repeat(auto-fit, minmax(min-content, 645px)); */
+	grid-template-columns: repeat(auto-fill, 645px);
+	grid-auto-flow: column;
+	column-gap: 20px;
+	overflow-y: scroll;
+	border-radius: 20px 0 0 20px;
+
+	/* Прячет скролл */
+	overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: none;
+}
+
+.scrollbar__wrapper::-webkit-scrollbar {
+	display: none;
+  width: 0 !important;
+}
+
+.scrollbar__control {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 76px;
+}
+
+.scrollbar__container {
+	display: flex;
+	align-items: center;
+}
+
+.scrollbar__button-slide {
+	padding: 0;
+	width: 5px;
+	height: 5px;
+	background-color: var(--white);
+	border-radius: 50%;
+	border: none;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.scrollbar__button-slide:last-of-type {
+	margin-right: 0;
+}
+
+.scrollbar__button-slide_active {
+	width: 10px;
+	height: 10px;
+	background-color: var(--pink);
+}
+
+.scrollbar__button-position {
+	width: 20px;
+	height: 14px;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+}
+
+.scrollbar__button-position_arrow-left {
+	width: 40px;
+	background-image: url(/images/svg/arrow-left.svg);
+	margin-right: 20px;
+}
+
+.scrollbar__button-position_arrow-right {
+	background-image: url(/images/svg/arrow-right-gray.svg);
+}
+
+svg {
+	fill: rgba(255, 255, 255, .5);
+}

@@ -1,0 +1,57 @@
+.scrollbar-card {
+	display: flex;
+	align-items: flex-start;
+	width: 645px;
+	padding: 60px 70px 50px;
+	background-color: var(--white);
+	box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+	border-radius: 20px;
+	box-sizing: border-box;
+}
+
+.scrollbar-card:last-of-type { 
+	margin-right: 92px;
+}
+
+.scrollbar-card__img {
+	width: 90px;
+	height: 90px;
+	object-fit: fill;
+	margin-right: 30px;
+}
+
+.scrollbar-card__conteiner-text {}
+
+.scrollbar-card__title {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 160%;
+	letter-spacing: .5%;
+	color: var(--dark-blue);
+}
+
+.scrollbar-card__desc {
+	margin: 0;
+	margin-bottom: 20px;
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 160%;
+	letter-spacing: 1%;
+	color: var(--purple);
+}
+
+.scrollbar-card__text {
+	max-width: 386px;
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 180%;
+	color: var(--grey);
+}
