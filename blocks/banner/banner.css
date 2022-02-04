@@ -62,9 +62,9 @@
 	background-position: bottom right;
 }
 
-@media (max-width: 728px) {
+@media (max-width: 767px) {
 	.banner {
-		padding: 0 24px 0;
+		padding: 0 36px 0;
 		min-height: initial;
 	}
 
@@ -90,5 +90,6 @@
 
 	.banner {
 		margin-bottom: 140px;
+		padding: 0 24px 0;
 	}
 }

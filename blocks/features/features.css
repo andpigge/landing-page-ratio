@@ -39,6 +39,7 @@
 @media (max-width: 728px) {
 	.features {
 		padding: 0;
+		margin-bottom: 60px;
 	}
 
 	.features__wrapper {

@@ -58,6 +58,16 @@
 	}
 
 	.header__list {
-		display: block;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header__item {
+		margin-right: 0;
+		margin-bottom: 8px;
+	}
+
+	.header__item:last-of-type {
+		margin-bottom: 0;
 	}
 }

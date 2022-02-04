@@ -7,7 +7,7 @@
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	padding: 162px 24px 65px;
+	padding: 162px 48px 65px;
 }
 
 .footer__container-info {
@@ -60,6 +60,7 @@
 }
 
 .footer__text {
+	max-width: 300px;
 	margin: 0;
 	font-family: 'Ubuntu', sans-serif;
 	font-style: normal;
@@ -86,14 +87,16 @@
 }
 
 .footer__list {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(3, 50px);
+	gap: 14px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
 .footer__item {
-	width: 50px;
+	width: 100%;
 	height: 50px;
 	background-color: var(--dark-blue);
 	opacity: 0.1;
@@ -110,4 +113,29 @@
 	width: inherit;
 	height: inherit;
 	text-decoration: none;
+}
+
+@media (max-width: 728px) {
+	.footer {
+		display: flex;
+	}
+
+	.footer__content {
+		flex-direction: column;
+		padding: 65px 36px 140px;
+		max-width: 480px;
+	}
+
+	.footer__container-info {
+		margin-bottom: 120px;
+		max-width: initial;
+	}
+
+	.footer__email {
+		max-width: initial;
+	}
+
+	.footer__text {
+		max-width: initial;
+	}
 }
