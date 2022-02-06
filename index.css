@@ -18,7 +18,7 @@ body {
 	font-size: calc(100vw / 1600 * 16);
 }
 
-@media (max-width: 728px) {
+@media (max-width: 800px) {
 	body {
 		font-size: calc(100vw / 728 * 16);
 	}

@@ -24,8 +24,6 @@
 
 .scrollbar__wrapper {
 	display: grid;
-	/* grid-template-columns: repeat(auto-fit, minmax(min-content, 645px)); */
-	grid-template-columns: repeat(auto-fill, 645px);
 	grid-auto-flow: column;
 	column-gap: 20px;
 	overflow-y: scroll;
@@ -97,6 +95,30 @@
 	background-image: url(/images/svg/arrow-right-gray.svg);
 }
 
-svg {
-	fill: rgba(255, 255, 255, .5);
+@media (max-width: 801px) {
+	.scrollbar {
+		padding: 64px 0 60px 60px;
+		margin-bottom: 64px;
+	}
+
+	.scrollbar__title {
+		margin-bottom: 64px;
+	}
+}
+
+@media (max-width: 413px) {
+	.scrollbar {
+		padding-left: 24px;
+		border-radius: 0;
+	}
+
+	.scrollbar__title {
+		font-size: 36px;
+		margin-bottom: 40px;
+	}
+
+	.scrollbar__control {
+		justify-content: space-around;
+		margin-right: 24px;
+	}
 }
