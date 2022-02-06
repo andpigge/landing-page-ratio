@@ -73,6 +73,15 @@
 	font-size: 16px;
 	line-height: 160%;
 	color: var(--dark-blue);
+	transition: .2s ease-out;
+}
+
+.features-card__link:hover {
+	opacity: .9;
+}
+
+.features-card__link:hover .features-card__arrow {
+	transform: translateX(6px);
 }
 
 .features-card__arrow {
@@ -84,6 +93,7 @@
 	background-size: 100%;
 	background-position: center;
 	margin-left: 20px;
+	transition: .2s ease-out;
 }
 
 @media (max-width: 728px) {
