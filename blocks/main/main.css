@@ -7,3 +7,11 @@
 .main__left-center {
 	margin-left: auto;
 }
+
+.main__bottom {
+	margin-bottom: 150px;
+
+	@media (max-width: 728px) {
+		margin-bottom: 40px;
+	}
+}

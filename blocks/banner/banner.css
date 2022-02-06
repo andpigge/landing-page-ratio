@@ -1,9 +1,10 @@
+@keyframes line { from { width: 0; } to { width: 100%; } }
+
 .banner {
 	position: relative;
 	max-width: 1248px;
 	min-height: 565px;
-	padding: 0 124px 0 62px;
-	margin-bottom: 100px;
+	padding: 142px 124px 100px 62px;
 }
 
 .banner__title {
@@ -32,30 +33,47 @@
   z-index: 1;
 }
 
-.banner__wrapper-link {
+.banner__link {
+	position: relative;
 	display: flex;
 	width: 170px;
 	height: 60px;
 	background-color: var(--purple);
 	border-radius: 50px;
+	text-decoration: none;
 }
 
-.banner__link {
+.banner__link:hover::after {
+	content: '';
+	position: absolute;
+  bottom: 0;
+  left: 0;
+	height: 60px;
+	background-color: var(--grey);
+	animation: line .5s ease both;
+	border-radius: 50px;
+}
+
+.banner__link:active::after {
+	transform: scale(1.1);
+}
+
+.banner__link-text {
 	margin: auto;
-	text-decoration: none;
 	font-family: 'Ubuntu', sans-serif;
 	color: var(--white);
 	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 28.8px;
+	z-index: 1;
 }
 
 .banner__bg {
 	width: 61%;
 	min-height: 468px;
 	position: absolute;
-	bottom: 0;
+	bottom: 100px;
 	left: 34%;
 	background-image: url(/images/svg/banner.svg);
 	background-repeat: no-repeat;
@@ -65,7 +83,7 @@
 
 @media (max-width: 767px) {
 	.banner {
-		padding: 0 36px 0;
+		padding: 142px 36px 100px;
 		min-height: initial;
 	}
 
@@ -80,7 +98,7 @@
 	}
 
 	.banner__bg {
-		bottom: -125px;
+		bottom: -25px;
 	}
 }
 
@@ -90,7 +108,6 @@
 	}
 
 	.banner {
-		margin-bottom: 140px;
-		padding: 0 24px 0;
+		padding: 142px 24px 140px;
 	}
 }

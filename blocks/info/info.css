@@ -8,7 +8,6 @@
 	border-radius: 50px;
 	box-sizing: border-box;
 	column-gap: 65px;
-	margin-bottom: 150px;
 }
 
 .info__image {
@@ -44,7 +43,7 @@
 	.info {
 		display: grid;
 		border-radius: 0;
-		padding: 32px 32px 32px 0;
+		padding: 32px 32px 64px 0;
 		justify-items: center;
 		grid-template-columns: 1fr;
 	}
