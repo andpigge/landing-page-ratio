@@ -32,16 +32,17 @@
   z-index: 1;
 }
 
-.banner__button {
-	border: none;
+.banner__wrapper-link {
+	display: flex;
 	width: 170px;
 	height: 60px;
 	background-color: var(--purple);
 	border-radius: 50px;
 }
 
-.banner__button-text {
-	margin: 0;
+.banner__link {
+	margin: auto;
+	text-decoration: none;
 	font-family: 'Ubuntu', sans-serif;
 	color: var(--white);
 	font-style: normal;

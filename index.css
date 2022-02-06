@@ -14,8 +14,14 @@
 @import url(./blocks/scrollbar-card/scrollbar-card.css);
 @import url(./blocks/footer/footer.css);
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-size: calc(100vw / 1600 * 16);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 @media (max-width: 800px) {

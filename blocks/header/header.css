@@ -1,3 +1,5 @@
+@keyframes line { from { width: 0; } to { width: 100%; } }
+
 .header {
 	max-width: 1120px;
 	display: flex;
@@ -30,7 +32,18 @@
 }
 
 .header__item {
+	position: relative;
 	margin-right: 40px;
+}
+
+.header__item:hover::after {
+	content: '';
+	position: absolute;
+  bottom: 0;
+  left: 0;
+	height: 2px;
+	background-color: var(--grey);
+	animation: line .3s ease both;
 }
 
 .header__item:last-of-type {
