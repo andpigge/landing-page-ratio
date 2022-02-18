@@ -19,6 +19,8 @@ html {
 }
 
 body {
+	/* это конечно круто calc(100vw / 1600 * 16), но в реальности есть дефолтный стили - типографика  */
+	/* нет дефолтного font-style font-weight font-family line-height color */
 	font-size: calc(100vw / 1600 * 16);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
